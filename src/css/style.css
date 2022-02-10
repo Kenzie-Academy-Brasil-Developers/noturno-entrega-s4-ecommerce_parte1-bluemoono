@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+html, body, div, ul, li, header, footer, figure, figcaption, a{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+:root{
+    --black: #000;
+    --grey-0: #F5F5F5;
+    --grey-50: #828282;
+    --grey-100: #333;
+    --primary: #2E245E;
+    --secondary: #6B54DE;
+    --white: #FFF;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--grey-0);
+    height: 80px;
+    width: 100%;
+}
+
+header h1, #primario a{
+    font-weight: bold;
+    color: var(--black);
+}
+
+header a{
+    color: var(--grey-50)
+}
+
+#header-menu ul{
+    margin-top: 5vh;
+}
+
+#header-menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/* MAIN */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* ASIDE */
+aside{
+    width: 350px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#area-busca input, #area-busca button{
+    padding: 13px;
+    border: none;
+}
+
+#area-busca input{
+    background-color: var(--grey-0);
+}
+
+#area-busca button{
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
+#header-carrinho{
+    background-color: var(--secondary);
+    color: var(--white);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
