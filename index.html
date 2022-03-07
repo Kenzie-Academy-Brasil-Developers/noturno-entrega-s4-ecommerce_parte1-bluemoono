@@ -6,32 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weartake</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <header class="topo">
-        <a href="index.html">
-            <h1>Weartake</h1>
-        </a>
-
-        <div id="header-menu">
-            <ul>
-                <li id="primario"><a href="">Todos</a></li>
-                <li><a href="">Acessórios</a></li>
-                <li><a href="">Calçados</a></li>
-                <li><a href="">Camisetas</a></li>
-            </ul>
-        </div>
-    </header>
+        <header class="header-menu">
+            <a href="index.html"><h1>Weartake</h1></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="" class="active">Todos</a>
+              <a href="">Acessórios</a>
+              <a href="">Calçados</a>
+              <a href="">Camisetas</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </header>
 
     <main>
-        <section id="produtos">
-            <ul id="containerListaProdutos">
-                
-            </ul>
-        </section>
-
         <aside>
             <div id="area-busca">
                 <input type="text" name="busca-input" id="busca-input" placeholder="Digite aqui sua pesquisa">
@@ -45,8 +40,101 @@
 
             </div>
         </aside>
+
+        <section id="produtos">
+            <ul id="containerListaProdutos">
+                <li>
+                    <figure>
+                        <div class="container-img">
+                            <img src="src/img/lightweight-jacket.png" alt="lightweight-jacket">
+                        </div>
+                        <figcaption>
+                            <p class="secao-produto">Camisetas</p>
+                            <h3 class="titulo-produto">Lightweight-jacket</h3>
+                            <p class="descricao-produto">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
+                            <p class="preco-produto">R$ 100.00</p>
+                            <a href="" class="link-carrinho">Adicionar ao carrinho</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="container-img">
+                            <img src="src/img/black-hat.png" alt="black-hat">
+                        </div>
+                        <figcaption>
+                            <p class="secao-produto">Acessórios</p>
+                            <h3 class="titulo-produto">Black Hat</h3>
+                            <p class="descricao-produto">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...
+                            </p>
+                            <p class="preco-produto">R$ 100.00</p>
+                            <a href="" class="link-carrinho">Adicionar ao carrinho</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="container-img">
+                            <img src="src/img/face-mask.png" alt="Face Mask">
+                        </div>
+                        <figcaption>
+                            <p class="secao-produto">Acessórios</p>
+                            <h3 class="titulo-produto">Face Mask</h3>
+                            <p class="descricao-produto">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</p>
+                            <p class="preco-produto">R$ 40.00</p>
+                            <a href="" class="link-carrinho">Adicionar ao carrinho</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="container-img">
+                            <img src="src/img/t-shit-black.png" alt="t-shirt">
+                        </div>
+                        <figcaption>
+                            <p class="secao-produto">Camisetas</p>
+                            <h3 class="titulo-produto">T-Shirt</h3>
+                            <p class="descricao-produto">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
+                            <p class="preco-produto">R$ 100.00</p>
+                            <a href="" class="link-carrinho">Adicionar ao carrinho</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="container-img">
+                            <img src="src/img/t-shirt.png" alt="Short-Sleeve T-Shirt">
+                        </div>
+                        <figcaption>
+                            <p class="secao-produto">Camisetas</p>
+                            <h3 class="titulo-produto">Short-Sleeve T-Shirt</h3>
+                            <p class="descricao-produto">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...</p>
+                            <p class="preco-produto">R$ 100.00</p>
+                            <a href="" class="link-carrinho">Adicionar ao carrinho</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="container-img">
+                            <img src="src/img/packable-jacket.png" alt="Champion packable-jacket">
+                        </div>
+                        <figcaption>
+                            <p class="secao-produto">Camisetas</p>
+                            <h3 class="titulo-produto">Champion Packable Jacket</h3>
+                            <p class="descricao-produto">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
+                            <p class="preco-produto">R$ 100.00</p>
+                            <a href="" class="link-carrinho">Adicionar ao carrinho</a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
     </main>
-    
+
+    <footer>
+        <h5>&copy; Copyright - 2022</h5>
+    </footer>
     <script src="src/js/script.js"></script>
 </body>
 </html>
