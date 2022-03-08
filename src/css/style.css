@@ -170,7 +170,135 @@ html, body, div, ul, li, header, footer, figure, figcaption, a{
     }
 }
 
-header{
-    display: flex;
 
+/*Desktop*/
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.header-menu {
+    background-color: var(--grey-0);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 200px;
+}
+
+.header-menu h1{
+    color: var(--black);
+}
+
+.header-menu a.icon{
+    display: none;
+}
+
+#myLinks a{
+    color: var(--grey-50);
+    margin: 20px 10px;
+    display: inline-flex;
+}
+
+#myLinks .active{
+    color: var(--black);
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    margin: 2vh;
+}
+
+aside{
+    position: absolute;
+    right: 3vw;
+}
+
+#area-busca input, #area-busca button{
+    border: none;
+    padding: 10px 10px;
+}
+
+#area-busca input{
+    background-color: var(--grey-0);
+}
+
+#area-busca button{
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+#area-carrinho{
+    text-align: center;
+    height: 20em;
+    background-color: var(--grey-0);
+    align-items: center;
+}
+
+#area-carrinho p {
+    color: var(--grey-50);
+}
+
+#header-carrinho{
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 3px 0;
+    margin-top: 10px;
+    color: var(--white);
+}
+
+#containerListaProdutos{
+    margin: auto;
+    display: flex;
+    width: 70em;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+#containerListaProdutos li{
+    width: 18em;
+    margin: 20px;
+    border: 1px solid var(--grey-0);
+}
+
+figcaption{
+    padding: 10px;
+}
+
+.container-img{
+    background-color: var(--grey-0);
+}
+
+.container-img img{
+    width: 100%;
+}
+
+.secao-produto{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px;
+    font-size: 1.7vh;
+    width: 4vw;
+}
+
+.descricao-produto{
+    font-size: 0.8em;
+    color: var(--grey-50);
+}
+
+.preco-produto{
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.link-carrinho{
+    color: var(--grey-50);
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+footer{
+    background-color: var(--grey-100);
+    color: var(--white);
+    text-align: center;
+    padding: 8px;
 }
